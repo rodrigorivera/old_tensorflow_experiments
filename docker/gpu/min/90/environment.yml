@@ -15,9 +15,6 @@ dependencies:
   - scikit-learn
   - numpy
   - scipy
-  - cloudpickle
   - matplotlib
-  - pyyaml
-  - typing
   - jupyter
   - tensorflow-gpu=1.0
