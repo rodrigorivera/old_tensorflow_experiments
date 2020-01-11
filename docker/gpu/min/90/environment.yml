@@ -10,21 +10,14 @@ channels:
 dependencies:
   - python=3.5
   - pip
-  - setuptools
-  - rapids
-  - dask                                                          
+  - setuptools                                                         
   - pandas
   - scikit-learn
   - numpy
   - scipy
   - cloudpickle
   - matplotlib
-  - Cython
-  - future
-  - protobuf
-  - enum34
   - pyyaml
   - typing
-  - jupyterlab
   - jupyter
   - tensorflow-gpu=1.0
