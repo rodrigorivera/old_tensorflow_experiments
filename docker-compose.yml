@@ -1,0 +1,23 @@
+
+
+
+
+
+
+version: '2.3'
+services:
+    ntbk-gpu-old_tensorflow_experiments:  
+      image: img_gpu_min-old_tensorflow_experiments:riverar
+      container_name: cntnr_gpu_min-old_tensorflow_experiments-riverar
+      build: docker/gpu/min/90
+      volumes:
+         - ./:/root
+      # Here Cookiecutter will try to append based on CPU or GPU# Runtime for GPU
+      runtime: nvidia
+      ipc: host
+      command: jupyter notebook --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.token='Old123Experiments456' --notebook-dir='/root'
+      
+      ports:
+         - "0.0.0.0:8089:8888"
+      stdin_open: true
+      tty: true
